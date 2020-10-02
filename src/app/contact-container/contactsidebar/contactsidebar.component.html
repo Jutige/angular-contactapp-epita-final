@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <li [routerLink]="['/users/detail', contact.id]" class="list-group-item" *ngFor="let contact of favs$ | async">
+    {{contact.name}}
+  </li>
+</ul>
